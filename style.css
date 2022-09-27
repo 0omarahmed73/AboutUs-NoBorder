@@ -1,0 +1,237 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    
+}
+
+#navhead {
+
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    transition: 0.7s;
+}
+.parent {
+    background-color: transparent;
+}
+.navcolored {
+    background-color: white !important;
+    color: black;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    height: 60px;
+    transition: 0.7s;
+    margin-top: 2px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.smallnav {
+    position: relative;
+}
+
+.ulnav11 {
+    position: absolute ;
+    top:50px;
+    
+    margin-left: 200px;
+    transition: 0.5s;
+    
+}
+.ulfind {
+    margin-left: -20px;
+}
+
+.logo {
+}
+.logo1 {
+    margin-top: 0;
+    cursor: pointer;
+    max-width: 47px;
+    max-width: 47px;
+    transition: 0.5s;
+}
+.logo12 {
+    cursor: pointer;
+    max-width: 47px;
+    max-width: 47px;
+    transition: 0.5s;
+}
+.logo1:hover {
+    transform: rotate(15deg)  ;
+}
+.ulnav li { 
+    cursor: pointer ;
+    padding: 13px 40px;
+    border-right: 1px solid rgba(128, 128, 128, 0.249);
+    transition: 0.5s;
+
+}
+.ulnav11 li {
+    cursor: pointer ;
+    padding: 5px 20px;
+    border-right: 1px solid rgba(128, 128, 128, 0.249);
+    transition: 0.5s;
+}
+
+.ulnav li:hover , .active:hover , .ulnav11 li{
+    background: rgba(0, 0, 0, 0.439) !important;
+    color: white;
+}
+
+.ulnav li a {
+    all: unset;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+}
+.ulnav11 li a {
+    all: unset;
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+}
+.ulnav .active , .ulnav11 .active {
+background-color: #4D29FF !important;
+}
+.menu {
+   
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .navwithmenu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+.menu svg {
+    width: 100%;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+
+}
+/* Welcome Page */
+.container2 {
+    /* border: 1px solid white; */
+  padding: 200px 0 200px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.welcome h1{
+    font-size: 16px;
+    text-align: left;
+}
+.welcome p {
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 14px;
+
+}
+.button {
+    background-color: #4D29FF;
+    border-radius: 10px;
+    padding: 10px 0;
+    max-width: 40%;
+    text-align: center;
+    display: block;
+    transition: 0.7s !important;
+}
+
+
+/* Second Section */
+.section2 {
+
+    padding: 180px 0 180px 0;
+    text-align: center;
+    background-color: #130d2ffc;
+    color: white;
+}
+.container3 {
+    display: flex;
+    justify-content: center;
+}
+.parentabout h1 {
+    margin-bottom: 30px;
+}
+footer {
+    background-color: #181c4c;
+    color: white;
+}
+.icons a {
+    all: unset;
+    cursor: pointer;
+}
+.icons svg:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+header {
+    background : url(assets/msp-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: animation 3s linear alternate  infinite;
+}
+
+@keyframes animation {
+   
+    0% {
+        box-shadow: inset 0 0 0 1000px rgba(50, 49, 49, 0.837) ;
+    }
+    100% {
+        box-shadow: inset 0 0 0 1000px rgba(21, 18, 52, 0.639) ;
+
+    }
+    
+}
+@media (min-width : 768px)
+{
+    .text1 {
+        font-size: 30px !important;
+    }
+}
+/*Medium*/
+
+@media (min-width : 992px)
+{
+    .ull22 {
+        display: none;
+        position: absolute ;
+        top:50px;
+        right: 0;
+    
+        
+    }
+    
+    .welcome {
+        padding : 0 100px;}
+}
+
